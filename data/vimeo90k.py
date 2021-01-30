@@ -33,7 +33,7 @@ class VimeoTriplet(Dataset):
             imgpath = os.path.join(self.image_root, self.trainlist[index])
         else:
             imgpath = os.path.join(self.image_root, self.testlist[index])
-        imgpaths = [imgpath + '/im1.png', imgpath + '/im2.png', imgpath + '/im3.png']
+        imgpaths = [imgpath + '/im1.jpg', imgpath + '/im2.jpg', imgpath + '/im3.jpg']
 
         # Load images
         img1 = Image.open(imgpaths[0])
